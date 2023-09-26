@@ -11,7 +11,7 @@ app.use(cors());
 
 // Servir pagina HTML
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(__dirname + '/client/public/index.html');
 });
 
 // Dados das cidades (exemplo)
