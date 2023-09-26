@@ -9,6 +9,11 @@ app.use(express.json());
 // Use o middleware cors para permitir solicitações de origens diferentes
 app.use(cors());
 
+// Servir pagina HTML
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
+});
+
 // Dados das cidades (exemplo)
 const citiesData = {
   city1: {
